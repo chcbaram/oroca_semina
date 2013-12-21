@@ -80,7 +80,7 @@ void Hw_DHT11_Tick(void)
 				Hw_DHT11_IO_SetLow();	
 			}
 			
-			if( Cnt >= 20/10 )	
+			if( Cnt > 20/10 )	
 			{
 				Hw_DHT11_BitIndex = 0;
 				Hw_DHT11_IO_SetHigh();
